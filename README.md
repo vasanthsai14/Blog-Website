@@ -1,7 +1,7 @@
-MERN Stack Blog App
+MERN Stack Blog App:
 This project is a comprehensive tutorial that guides beginners through the process of building a fullstack blog application using the MERN (MongoDB, Express, React, Node.js) stack. By the end of this tutorial, you will have a fully functional blog app capable of handling user registration, login, post creation, and viewing posts.
 
-Overview
+Overview:
 The project encompasses both frontend and backend components, demonstrating the integration of various technologies to create a seamless blogging experience. The frontend is built using React, providing an interactive user interface for registration, login, and post management. The backend, powered by Node.js and Express, handles data storage and retrieval in a MongoDB database.
 
 Features

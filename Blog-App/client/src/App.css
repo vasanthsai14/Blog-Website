@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  color: #222;
+  background-color:lavenderblush;
+
+}
+main{
+  padding: 10px;
+  max-width: 750px;
+  margin: 0 auto;
+  align-items: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top:20px ;
+  align-items: center;
+  margin-bottom: 30px;
+}
+img{
+  max-width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.6rem;
+  color:crimson;
+  color-interpolation-filters: linearRGB;
+}
+header nav{
+  display: flex;
+  gap: 15px;
+  font-weight:500;
+  font-size: 1.1rem;
+}
+div.post{
+  margin-top: 3px;
+  display: grid;
+  grid-template-columns: 1.05fr 1.1fr;
+  gap: 22px;
+  margin-bottom: 30px;
+  
+}
+div.post div.image{ 
+ height: 100px;
+}
+div.post div.content h2{
+  margin: 0;
+  font-size: 1.4rem;
+  justify-content:center;
+  text-justify:inter-cluster;
+  color: rgb(69, 64, 64);
+}
+.info{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.summary{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-justify: newspaper;
+
+}
+.author{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  
+}
+form.login ,form.register{
+  max-width: 400px;
+  margin: 0 auto;
+}
+input{
+  display: block;
+  height: 2rem;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 0;
+  background-color: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+}
+button{
+  width: 100%;
+  height: 2rem;
+  margin-top: 5px;
+  display: block;
+  background-color:rgb(244, 97, 97);
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 0;
+}
+form.login h1,form.register h1{
+  text-align: center;
+}

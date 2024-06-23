@@ -1,0 +1,493 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  color: #222;
+  background-color: lavenderblush;
+
+}
+main{
+  padding: 10px; 
+  max-width: 790px;
+  margin: 0 auto;
+  align-items: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top:20px ;
+  align-items: center;
+  margin-bottom: 30px;
+}
+img{
+  max-width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.6rem;
+  color:crimson;
+  color-interpolation-filters: linearRGB;
+}
+header nav{
+  display: flex;
+  gap: 15px;
+  font-weight:500;
+  font-size: 1.1rem;
+}
+div.post{
+  margin-top: 3px;
+  display: grid;
+  grid-template-columns: 1.05fr 1.1fr;
+  /* grid-template-columns: 1.05fr 1.1fr; */
+  gap: 22px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 660px) {
+  div.post {
+    grid-template-columns: 1fr;
+    margin-bottom: 2px;
+  }
+
+  div.post div.image,
+  div.post div.content {
+    overflow: hidden; /* Prevent content overflow */
+  }
+
+  div.post div.image {
+    order: 1;
+    width: 100%;
+    height: 100%; /* Set the desired height, adjust as needed */
+    object-fit: contain; /* Keep the aspect ratio while fitting the content within the specified height */
+    display: block;
+    margin: auto;
+  }
+
+  div.post div.content {
+    order: 2;
+  }
+}
+
+.header{
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+.search-bar{
+  height: 2.5rem;
+  width: 10rem;
+}
+header nav a {
+  display: inline-block;
+  padding: 7px 10px; 
+  background-color:   #ed4d4d ; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem; 
+}
+
+header nav a:hover {
+  background-color: #E57373; 
+}
+
+div.post {
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+  background-color: #ffff; 
+}
+
+div.post div.content h2{
+  margin: 0;
+  font-size: 1.4rem;
+  justify-content:center;
+  text-justify:inter-cluster;
+  color: rgb(69, 64, 64);
+}
+div.post div.content a{
+  text-decoration: none;
+  color: inherit;
+}
+.info{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.summary{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-justify: newspaper;
+
+}
+/* Add the following media query */
+@media screen and (max-width: 660px) {
+  div.post div.content h2 {
+    font-size: 1.2rem; 
+  }
+
+  div.post div.content .summary {
+    font-size: 0.9rem; 
+  }
+}
+.author{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  
+}
+
+form.login ,form.register{
+  max-width: 400px;
+  margin: 0 auto;
+}
+input{
+  display: block;
+  height: 2rem;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 0;
+  background-color: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+}
+button{
+  width: 100%;
+  height: 2rem;
+  margin-top: 5px;
+  display: block;
+  background-color:rgb(244, 97, 97);
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 0;
+}
+form.login h1,form.register h1{
+  text-align: center;
+}
+
+div.post-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+div.post-page div.image {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Keep the aspect ratio while fitting the content within the specified height */
+  display: block;
+  margin: auto;
+}
+
+div.post-page div.image img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain; /* Keep the aspect ratio while fitting the content within the specified height */
+  margin: auto;
+  display: block;
+
+}
+
+div.post-page a{
+  color: #333;
+  text-decoration: underline;
+}
+div.post-page h1{
+  text-align: center;
+  margin:5px 0 5px ;
+  font-size: 1.5rem;
+  font-weight: 555;
+}
+div.post-page time{
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+div.post-page div.author{
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.7rem;
+  font-weight: 555;
+}
+div.edit-row{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.4rem;
+}
+div.post-page a.edit-btn{
+  background-color:rgb(232, 72, 104) ;
+  font-size: 0.92rem;
+  color: #fff;
+  border-radius: 7px;
+  text-decoration: none;
+  align-items: center;
+  display: inline-flex;
+  column-gap: 0.33sem;
+  padding: 6px 12px;
+  margin-bottom: 0.6rem;
+}
+svg{
+  height: 0.99rem;
+}
+a{
+  cursor: pointer;
+}
+@media screen and (min-width: 661px) {
+  div.post div.image {
+    order: 1;
+    width: 21rem; /* Adjust the value based on your design */
+    height: 15rem; /* Adjust the value based on your design */
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  div.post div.image {
+    order: 1;
+    width: 100%;
+    height: 15rem; /* Adjust the value based on your design */
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+}
+.comment{
+  border: 1px solid #ddd; /* Add a border for separation */
+  padding:10px;
+  border-radius: 10px;
+  margin: 1%; 
+}
+.comment .comment-box{
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+  border-radius: 5px;
+  height: 1.8rem;
+  position: relative; 
+}
+.comment h3 svg{
+  min-height: 1.2rem;
+}
+
+.para{
+  line-height: 1.5em;
+}
+.para span{
+  align-items: end;
+}
+.comment a{
+  color:#3c9bff !important;
+}
+.category {
+  padding:0.1rem;
+  margin-top: 0;
+  font-size: 0.77rem;
+  border: 1px solid #111;
+  border-radius: 7px;
+  background-color:#E6E6FA ;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ProfilePage styles */
+.profile-page {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 2;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.right-section {
+  flex: 1;
+  position: sticky;
+  top: 20px; /* Stick to the top of the viewport */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: max-content;
+}
+
+.left-section h2,
+.right-section h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.left-section .post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.left-section h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.left-section .summary {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.left-section .author {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.left-section .read-more {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ed4d4d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.left-section .read-more:hover {
+  background-color: #e57373;
+}
+
+.right-section{
+  width: max-content;
+}
+
+.right-section .profile-picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.right-section .profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.right-section .profile-details {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.right-section .profile-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.right-section .profile-details p strong {
+  color: #333;
+}
+
+.right-section .edit-profile-button {
+  display: block;
+  padding: 5px;
+  background-color: #ed4d4d;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.right-section .edit-profile-button:hover {
+  background-color: #e57373;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-page {
+    flex-direction: column;
+  }
+
+  .right-section {
+    position: relative;
+    top: 0;
+  }
+}
+
+
+/* Styles for ProfileEditPage */
+.profile-edit-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+}
+
+.profile-edit-page h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.profile-edit-page label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.profile-edit-page input[type="email"],
+.profile-edit-page textarea,
+.profile-edit-page input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 0.88rem;
+}
+
+.profile-edit-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ed4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.profile-edit-page button:hover {
+  background-color: #e57373;
+}

@@ -99,27 +99,35 @@ The Blog Website offers a user-friendly interface for managing blog posts. It in
 
 ## How to Run the Project
 
-Clone the repository:
+1. **Clone the repository:**
 
-```bash
-git clone https://github.com/vasanthsai14/Blog-Website.git
+    ```bash
+    git clone https://github.com/vasanthsai14/Blog-Website.git
+    ```
 
-Navigate to the project directory:
+2. **Navigate to the project directory:**
 
-```bash
-cd Blog-Website
+    ```bash
+    cd Blog-Website
+    ```
 
-Install dependencies:
+3. **Install dependencies:**
 
-```bash
-npm install
-npm start
+    ```bash
+    npm install
+    npm start
+    ```
 
-Start the server:
+4. **Start the server:**
 
-```bash
-npx nodemon index.js
+    ```bash
+    cd api
+    npm install
+    npx nodemon index.js
+    ```
 
-Open your web browser and go to http://localhost:3000 to view the application.
+5. **Open your web browser and go to [http://localhost:3000](http://localhost:3000) to view the application.**
 
-License: This project is licensed under the MIT License.
+## License
+
+This project is licensed under the MIT License.

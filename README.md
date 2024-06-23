@@ -1,4 +1,4 @@
-# Blog Website
+## Blog Website
 
 This Blog Website is a comprehensive platform for users to create, manage, and engage with blog posts. The application provides a seamless experience for users to register, login, create new posts, edit existing ones, and manage their profiles. It is built using modern web technologies and follows best practices in web development.
 
